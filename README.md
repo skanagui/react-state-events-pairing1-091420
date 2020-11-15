@@ -1,4 +1,4 @@
-# react-stateevents-practice1
+# React State and Events Pairing 1
 
 # Deliverables
 
@@ -19,4 +19,3 @@ Below you will find a gif of the completed app
 
 
 ![dog gif](state-pairing-gif.gif)
-# react-state-events-pairing
