@@ -15,7 +15,7 @@ You are given a fake api response that is being exported from `api.js`. The resp
 - You can run `npm run submit` to save and push your work to github
 
 
-Below you will find a gif of the completed app
+Below you will find an example gif
 
 
 ![dog gif](state-pairing-gif.gif)
