@@ -1,19 +1,30 @@
 import React from "react";
 
 
-function DogCard(props) {
+class DogCard extends React.Component {
+  state = {
+    clicked: false
+  }
   
-  return (
+  clickHandler = () => {
+    this.setState({clicked: !this.state.clicked})
+  }
+
+  render() {
+    const {dog} = this.props;
+    return(
     <div className="card">
       <span className="content">
-        <h2 >{props.dog.name}</h2>
-        <img alt="" src={""} />
+        <h2 >{dog.name}</h2>
+        <img alt="dog" src={dog.img} />
       </span>
       <span className="bark">
-        <button>Bark</button>
+        <button onClick={this.clickHandler}>Bark</button>
+        {this.state.clicked ? (<h2>Bark</h2>) : null}
       </span>
     </div>
-  );
+    );
+  }
 }
 
 export default DogCard;
